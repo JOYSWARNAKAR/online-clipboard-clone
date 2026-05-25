@@ -1,0 +1,16 @@
+{
+  "name": "online-clipboard-clone",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c blue,green \"npm run dev --prefix Backend\" \"npm run dev --prefix Frontend\"",
+    "dev:backend": "npm run dev --prefix Backend",
+    "dev:frontend": "npm run dev --prefix Frontend",
+    "install:all": "npm install && npm install --prefix Backend && npm install --prefix Frontend",
+    "build": "npm run build --prefix Frontend",
+    "start": "npm run start --prefix Backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
