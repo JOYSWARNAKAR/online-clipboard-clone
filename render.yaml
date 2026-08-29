@@ -4,8 +4,5 @@ services:
     runtime: node
     plan: free
     buildCommand: npm run install:all && npm run build
-    startCommand: npm run start
+    startCommand: NODE_ENV=production npm run start
     healthCheckPath: /api/health
-    envVars:
-      - key: NODE_ENV
-        value: production
