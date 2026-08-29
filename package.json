@@ -10,6 +10,9 @@
     "build": "npm run build --prefix Frontend",
     "start": "npm run start --prefix Backend"
   },
+  "engines": {
+    "node": ">=20"
+  },
   "devDependencies": {
     "concurrently": "^9.2.0"
   }
